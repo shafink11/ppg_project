@@ -1,0 +1,768 @@
+{
+    "team": {
+      "team_id": "team_fake_001",
+      "generated_at": "2025-02-15T21:54:11.143584Z",
+      "members": [
+        {
+          "user": {
+            "user_id": "f7461933-2ecf-45cf-bcd6-eeac0c2f0c53",
+            "reference_id": "tony_stark",
+            "provider": "GARMIN",
+            "active": true,
+            "created_at": "2025-02-15T21:54:11.143472Z",
+            "last_webhook_update": "2025-02-15T21:54:11.143516Z",
+            "scopes": "fitness.sleep.read,fitness.activity.read,fitness.heart_rate.read"
+          },
+          "data": {
+            "activity": {
+              "type": "activity",
+              "metadata": {
+                "name": "Running",
+                "start_time": "2025-02-15T21:53:40.898544Z",
+                "end_time": "2025-02-15T21:54:10.898544Z",
+                "upload_type": 1,
+                "summary_id": "fake-08df4348-ee51-4f3f-880c-c3b3c0b20d23"
+              },
+              "data_points": [
+                {
+                  "timestamp": "2025-02-15T21:53:45.898544Z",
+                  "steps": 20
+                },
+                {
+                  "timestamp": "2025-02-15T21:53:55.898544Z",
+                  "steps": 25
+                }
+              ]
+            },
+            "sleep": {
+              "type": "sleep",
+              "metadata": {
+                "start_time": "2025-02-15T13:53:40.898544Z",
+                "end_time": "2025-02-15T21:53:40.898544Z",
+                "sleep_quality": "good",
+                "summary_id": "fake-6c2b0dac-1f2e-4fa0-b655-6561d640507b"
+              },
+              "data_points": [
+                {
+                  "timestamp": "2025-02-15T17:53:40.898544Z",
+                  "sleep_stage": "deep",
+                  "duration": 30
+                },
+                {
+                  "timestamp": "2025-02-15T18:53:40.898544Z",
+                  "sleep_stage": "light",
+                  "duration": 20
+                }
+              ]
+            },
+            "heart_rate": {
+              "type": "heart_rate",
+              "metadata": {
+                "start_time": "2025-02-15T21:53:40.898544Z",
+                "end_time": "2025-02-15T21:54:10.898544Z",
+                "summary_id": "fake-61810d6e-a9f5-4ef6-bb18-5cceece5b56e"
+              },
+              "data_points": [
+                {
+                  "timestamp": "2025-02-15T21:53:45.898544Z",
+                  "bpm": 80
+                },
+                {
+                  "timestamp": "2025-02-15T21:53:55.898544Z",
+                  "bpm": 82
+                },
+                {
+                  "timestamp": "2025-02-15T21:54:05.898544Z",
+                  "bpm": 81
+                }
+              ]
+            }
+          }
+        },
+        {
+          "user": {
+            "user_id": "66d0263c-1376-445e-8453-38c64a2e1ce4",
+            "reference_id": "steve_rogers",
+            "provider": "GARMIN",
+            "active": true,
+            "created_at": "2025-02-15T21:54:11.143666Z",
+            "last_webhook_update": "2025-02-15T21:54:11.143684Z",
+            "scopes": "fitness.sleep.read,fitness.activity.read,fitness.heart_rate.read"
+          },
+          "data": {
+            "activity": {
+              "type": "activity",
+              "metadata": {
+                "name": "Running",
+                "start_time": "2025-02-15T21:53:40.898544Z",
+                "end_time": "2025-02-15T21:54:10.898544Z",
+                "upload_type": 1,
+                "summary_id": "fake-08df4348-ee51-4f3f-880c-c3b3c0b20d23"
+              },
+              "data_points": [
+                {
+                  "timestamp": "2025-02-15T21:53:45.898544Z",
+                  "steps": 20
+                },
+                {
+                  "timestamp": "2025-02-15T21:53:55.898544Z",
+                  "steps": 25
+                }
+              ]
+            },
+            "sleep": {
+              "type": "sleep",
+              "metadata": {
+                "start_time": "2025-02-15T13:53:40.898544Z",
+                "end_time": "2025-02-15T21:53:40.898544Z",
+                "sleep_quality": "good",
+                "summary_id": "fake-6c2b0dac-1f2e-4fa0-b655-6561d640507b"
+              },
+              "data_points": [
+                {
+                  "timestamp": "2025-02-15T17:53:40.898544Z",
+                  "sleep_stage": "deep",
+                  "duration": 30
+                },
+                {
+                  "timestamp": "2025-02-15T18:53:40.898544Z",
+                  "sleep_stage": "light",
+                  "duration": 20
+                }
+              ]
+            },
+            "heart_rate": {
+              "type": "heart_rate",
+              "metadata": {
+                "start_time": "2025-02-15T21:53:40.898544Z",
+                "end_time": "2025-02-15T21:54:10.898544Z",
+                "summary_id": "fake-61810d6e-a9f5-4ef6-bb18-5cceece5b56e"
+              },
+              "data_points": [
+                {
+                  "timestamp": "2025-02-15T21:53:45.898544Z",
+                  "bpm": 80
+                },
+                {
+                  "timestamp": "2025-02-15T21:53:55.898544Z",
+                  "bpm": 82
+                },
+                {
+                  "timestamp": "2025-02-15T21:54:05.898544Z",
+                  "bpm": 81
+                }
+              ]
+            }
+          }
+        },
+        {
+          "user": {
+            "user_id": "f6fc38b2-a0c5-4ed6-bb41-64b80db1d8e8",
+            "reference_id": "bruce_banner",
+            "provider": "GARMIN",
+            "active": true,
+            "created_at": "2025-02-15T21:54:11.143747Z",
+            "last_webhook_update": "2025-02-15T21:54:11.143754Z",
+            "scopes": "fitness.sleep.read,fitness.activity.read,fitness.heart_rate.read"
+          },
+          "data": {
+            "activity": {
+              "type": "activity",
+              "metadata": {
+                "name": "Running",
+                "start_time": "2025-02-15T21:53:40.898544Z",
+                "end_time": "2025-02-15T21:54:10.898544Z",
+                "upload_type": 1,
+                "summary_id": "fake-08df4348-ee51-4f3f-880c-c3b3c0b20d23"
+              },
+              "data_points": [
+                {
+                  "timestamp": "2025-02-15T21:53:45.898544Z",
+                  "steps": 20
+                },
+                {
+                  "timestamp": "2025-02-15T21:53:55.898544Z",
+                  "steps": 25
+                }
+              ]
+            },
+            "sleep": {
+              "type": "sleep",
+              "metadata": {
+                "start_time": "2025-02-15T13:53:40.898544Z",
+                "end_time": "2025-02-15T21:53:40.898544Z",
+                "sleep_quality": "good",
+                "summary_id": "fake-6c2b0dac-1f2e-4fa0-b655-6561d640507b"
+              },
+              "data_points": [
+                {
+                  "timestamp": "2025-02-15T17:53:40.898544Z",
+                  "sleep_stage": "deep",
+                  "duration": 30
+                },
+                {
+                  "timestamp": "2025-02-15T18:53:40.898544Z",
+                  "sleep_stage": "light",
+                  "duration": 20
+                }
+              ]
+            },
+            "heart_rate": {
+              "type": "heart_rate",
+              "metadata": {
+                "start_time": "2025-02-15T21:53:40.898544Z",
+                "end_time": "2025-02-15T21:54:10.898544Z",
+                "summary_id": "fake-61810d6e-a9f5-4ef6-bb18-5cceece5b56e"
+              },
+              "data_points": [
+                {
+                  "timestamp": "2025-02-15T21:53:45.898544Z",
+                  "bpm": 80
+                },
+                {
+                  "timestamp": "2025-02-15T21:53:55.898544Z",
+                  "bpm": 82
+                },
+                {
+                  "timestamp": "2025-02-15T21:54:05.898544Z",
+                  "bpm": 81
+                }
+              ]
+            }
+          }
+        },
+        {
+          "user": {
+            "user_id": "d063e384-eb78-4bf9-ada4-4a68bf6bf7a4",
+            "reference_id": "natasha_romanoff",
+            "provider": "GARMIN",
+            "active": true,
+            "created_at": "2025-02-15T21:54:11.143792Z",
+            "last_webhook_update": "2025-02-15T21:54:11.143795Z",
+            "scopes": "fitness.sleep.read,fitness.activity.read,fitness.heart_rate.read"
+          },
+          "data": {
+            "activity": {
+              "type": "activity",
+              "metadata": {
+                "name": "Running",
+                "start_time": "2025-02-15T21:53:40.898544Z",
+                "end_time": "2025-02-15T21:54:10.898544Z",
+                "upload_type": 1,
+                "summary_id": "fake-08df4348-ee51-4f3f-880c-c3b3c0b20d23"
+              },
+              "data_points": [
+                {
+                  "timestamp": "2025-02-15T21:53:45.898544Z",
+                  "steps": 20
+                },
+                {
+                  "timestamp": "2025-02-15T21:53:55.898544Z",
+                  "steps": 25
+                }
+              ]
+            },
+            "sleep": {
+              "type": "sleep",
+              "metadata": {
+                "start_time": "2025-02-15T13:53:40.898544Z",
+                "end_time": "2025-02-15T21:53:40.898544Z",
+                "sleep_quality": "good",
+                "summary_id": "fake-6c2b0dac-1f2e-4fa0-b655-6561d640507b"
+              },
+              "data_points": [
+                {
+                  "timestamp": "2025-02-15T17:53:40.898544Z",
+                  "sleep_stage": "deep",
+                  "duration": 30
+                },
+                {
+                  "timestamp": "2025-02-15T18:53:40.898544Z",
+                  "sleep_stage": "light",
+                  "duration": 20
+                }
+              ]
+            },
+            "heart_rate": {
+              "type": "heart_rate",
+              "metadata": {
+                "start_time": "2025-02-15T21:53:40.898544Z",
+                "end_time": "2025-02-15T21:54:10.898544Z",
+                "summary_id": "fake-61810d6e-a9f5-4ef6-bb18-5cceece5b56e"
+              },
+              "data_points": [
+                {
+                  "timestamp": "2025-02-15T21:53:45.898544Z",
+                  "bpm": 80
+                },
+                {
+                  "timestamp": "2025-02-15T21:53:55.898544Z",
+                  "bpm": 82
+                },
+                {
+                  "timestamp": "2025-02-15T21:54:05.898544Z",
+                  "bpm": 81
+                }
+              ]
+            }
+          }
+        },
+        {
+          "user": {
+            "user_id": "471aaf85-142d-4159-bfd0-e17ccf2ea9b1",
+            "reference_id": "clint_barton",
+            "provider": "GARMIN",
+            "active": true,
+            "created_at": "2025-02-15T21:54:11.143826Z",
+            "last_webhook_update": "2025-02-15T21:54:11.143829Z",
+            "scopes": "fitness.sleep.read,fitness.activity.read,fitness.heart_rate.read"
+          },
+          "data": {
+            "activity": {
+              "type": "activity",
+              "metadata": {
+                "name": "Running",
+                "start_time": "2025-02-15T21:53:40.898544Z",
+                "end_time": "2025-02-15T21:54:10.898544Z",
+                "upload_type": 1,
+                "summary_id": "fake-08df4348-ee51-4f3f-880c-c3b3c0b20d23"
+              },
+              "data_points": [
+                {
+                  "timestamp": "2025-02-15T21:53:45.898544Z",
+                  "steps": 20
+                },
+                {
+                  "timestamp": "2025-02-15T21:53:55.898544Z",
+                  "steps": 25
+                }
+              ]
+            },
+            "sleep": {
+              "type": "sleep",
+              "metadata": {
+                "start_time": "2025-02-15T13:53:40.898544Z",
+                "end_time": "2025-02-15T21:53:40.898544Z",
+                "sleep_quality": "good",
+                "summary_id": "fake-6c2b0dac-1f2e-4fa0-b655-6561d640507b"
+              },
+              "data_points": [
+                {
+                  "timestamp": "2025-02-15T17:53:40.898544Z",
+                  "sleep_stage": "deep",
+                  "duration": 30
+                },
+                {
+                  "timestamp": "2025-02-15T18:53:40.898544Z",
+                  "sleep_stage": "light",
+                  "duration": 20
+                }
+              ]
+            },
+            "heart_rate": {
+              "type": "heart_rate",
+              "metadata": {
+                "start_time": "2025-02-15T21:53:40.898544Z",
+                "end_time": "2025-02-15T21:54:10.898544Z",
+                "summary_id": "fake-61810d6e-a9f5-4ef6-bb18-5cceece5b56e"
+              },
+              "data_points": [
+                {
+                  "timestamp": "2025-02-15T21:53:45.898544Z",
+                  "bpm": 80
+                },
+                {
+                  "timestamp": "2025-02-15T21:53:55.898544Z",
+                  "bpm": 82
+                },
+                {
+                  "timestamp": "2025-02-15T21:54:05.898544Z",
+                  "bpm": 81
+                }
+              ]
+            }
+          }
+        },
+        {
+          "user": {
+            "user_id": "481f7f2b-8f82-4c33-8305-8a56bfe4bbfb",
+            "reference_id": "thor_odinson",
+            "provider": "GARMIN",
+            "active": true,
+            "created_at": "2025-02-15T21:54:11.143867Z",
+            "last_webhook_update": "2025-02-15T21:54:11.143870Z",
+            "scopes": "fitness.sleep.read,fitness.activity.read,fitness.heart_rate.read"
+          },
+          "data": {
+            "activity": {
+              "type": "activity",
+              "metadata": {
+                "name": "Running",
+                "start_time": "2025-02-15T21:53:40.898544Z",
+                "end_time": "2025-02-15T21:54:10.898544Z",
+                "upload_type": 1,
+                "summary_id": "fake-08df4348-ee51-4f3f-880c-c3b3c0b20d23"
+              },
+              "data_points": [
+                {
+                  "timestamp": "2025-02-15T21:53:45.898544Z",
+                  "steps": 20
+                },
+                {
+                  "timestamp": "2025-02-15T21:53:55.898544Z",
+                  "steps": 25
+                }
+              ]
+            },
+            "sleep": {
+              "type": "sleep",
+              "metadata": {
+                "start_time": "2025-02-15T13:53:40.898544Z",
+                "end_time": "2025-02-15T21:53:40.898544Z",
+                "sleep_quality": "good",
+                "summary_id": "fake-6c2b0dac-1f2e-4fa0-b655-6561d640507b"
+              },
+              "data_points": [
+                {
+                  "timestamp": "2025-02-15T17:53:40.898544Z",
+                  "sleep_stage": "deep",
+                  "duration": 30
+                },
+                {
+                  "timestamp": "2025-02-15T18:53:40.898544Z",
+                  "sleep_stage": "light",
+                  "duration": 20
+                }
+              ]
+            },
+            "heart_rate": {
+              "type": "heart_rate",
+              "metadata": {
+                "start_time": "2025-02-15T21:53:40.898544Z",
+                "end_time": "2025-02-15T21:54:10.898544Z",
+                "summary_id": "fake-61810d6e-a9f5-4ef6-bb18-5cceece5b56e"
+              },
+              "data_points": [
+                {
+                  "timestamp": "2025-02-15T21:53:45.898544Z",
+                  "bpm": 80
+                },
+                {
+                  "timestamp": "2025-02-15T21:53:55.898544Z",
+                  "bpm": 82
+                },
+                {
+                  "timestamp": "2025-02-15T21:54:05.898544Z",
+                  "bpm": 81
+                }
+              ]
+            }
+          }
+        },
+        {
+          "user": {
+            "user_id": "b179b215-d804-49cb-bc37-fc82f5c5fd37",
+            "reference_id": "peter_parker",
+            "provider": "GARMIN",
+            "active": true,
+            "created_at": "2025-02-15T21:54:11.143900Z",
+            "last_webhook_update": "2025-02-15T21:54:11.143903Z",
+            "scopes": "fitness.sleep.read,fitness.activity.read,fitness.heart_rate.read"
+          },
+          "data": {
+            "activity": {
+              "type": "activity",
+              "metadata": {
+                "name": "Running",
+                "start_time": "2025-02-15T21:53:40.898544Z",
+                "end_time": "2025-02-15T21:54:10.898544Z",
+                "upload_type": 1,
+                "summary_id": "fake-08df4348-ee51-4f3f-880c-c3b3c0b20d23"
+              },
+              "data_points": [
+                {
+                  "timestamp": "2025-02-15T21:53:45.898544Z",
+                  "steps": 20
+                },
+                {
+                  "timestamp": "2025-02-15T21:53:55.898544Z",
+                  "steps": 25
+                }
+              ]
+            },
+            "sleep": {
+              "type": "sleep",
+              "metadata": {
+                "start_time": "2025-02-15T13:53:40.898544Z",
+                "end_time": "2025-02-15T21:53:40.898544Z",
+                "sleep_quality": "good",
+                "summary_id": "fake-6c2b0dac-1f2e-4fa0-b655-6561d640507b"
+              },
+              "data_points": [
+                {
+                  "timestamp": "2025-02-15T17:53:40.898544Z",
+                  "sleep_stage": "deep",
+                  "duration": 30
+                },
+                {
+                  "timestamp": "2025-02-15T18:53:40.898544Z",
+                  "sleep_stage": "light",
+                  "duration": 20
+                }
+              ]
+            },
+            "heart_rate": {
+              "type": "heart_rate",
+              "metadata": {
+                "start_time": "2025-02-15T21:53:40.898544Z",
+                "end_time": "2025-02-15T21:54:10.898544Z",
+                "summary_id": "fake-61810d6e-a9f5-4ef6-bb18-5cceece5b56e"
+              },
+              "data_points": [
+                {
+                  "timestamp": "2025-02-15T21:53:45.898544Z",
+                  "bpm": 80
+                },
+                {
+                  "timestamp": "2025-02-15T21:53:55.898544Z",
+                  "bpm": 82
+                },
+                {
+                  "timestamp": "2025-02-15T21:54:05.898544Z",
+                  "bpm": 81
+                }
+              ]
+            }
+          }
+        },
+        {
+          "user": {
+            "user_id": "1d61c30a-be62-4491-b115-1962e402ea1f",
+            "reference_id": "wanda_maximoff",
+            "provider": "GARMIN",
+            "active": true,
+            "created_at": "2025-02-15T21:54:11.143932Z",
+            "last_webhook_update": "2025-02-15T21:54:11.143935Z",
+            "scopes": "fitness.sleep.read,fitness.activity.read,fitness.heart_rate.read"
+          },
+          "data": {
+            "activity": {
+              "type": "activity",
+              "metadata": {
+                "name": "Running",
+                "start_time": "2025-02-15T21:53:40.898544Z",
+                "end_time": "2025-02-15T21:54:10.898544Z",
+                "upload_type": 1,
+                "summary_id": "fake-08df4348-ee51-4f3f-880c-c3b3c0b20d23"
+              },
+              "data_points": [
+                {
+                  "timestamp": "2025-02-15T21:53:45.898544Z",
+                  "steps": 20
+                },
+                {
+                  "timestamp": "2025-02-15T21:53:55.898544Z",
+                  "steps": 25
+                }
+              ]
+            },
+            "sleep": {
+              "type": "sleep",
+              "metadata": {
+                "start_time": "2025-02-15T13:53:40.898544Z",
+                "end_time": "2025-02-15T21:53:40.898544Z",
+                "sleep_quality": "good",
+                "summary_id": "fake-6c2b0dac-1f2e-4fa0-b655-6561d640507b"
+              },
+              "data_points": [
+                {
+                  "timestamp": "2025-02-15T17:53:40.898544Z",
+                  "sleep_stage": "deep",
+                  "duration": 30
+                },
+                {
+                  "timestamp": "2025-02-15T18:53:40.898544Z",
+                  "sleep_stage": "light",
+                  "duration": 20
+                }
+              ]
+            },
+            "heart_rate": {
+              "type": "heart_rate",
+              "metadata": {
+                "start_time": "2025-02-15T21:53:40.898544Z",
+                "end_time": "2025-02-15T21:54:10.898544Z",
+                "summary_id": "fake-61810d6e-a9f5-4ef6-bb18-5cceece5b56e"
+              },
+              "data_points": [
+                {
+                  "timestamp": "2025-02-15T21:53:45.898544Z",
+                  "bpm": 80
+                },
+                {
+                  "timestamp": "2025-02-15T21:53:55.898544Z",
+                  "bpm": 82
+                },
+                {
+                  "timestamp": "2025-02-15T21:54:05.898544Z",
+                  "bpm": 81
+                }
+              ]
+            }
+          }
+        },
+        {
+          "user": {
+            "user_id": "5cd47005-9eab-4be5-9264-0938709acb5b",
+            "reference_id": "dr_strange",
+            "provider": "GARMIN",
+            "active": true,
+            "created_at": "2025-02-15T21:54:11.143961Z",
+            "last_webhook_update": "2025-02-15T21:54:11.143963Z",
+            "scopes": "fitness.sleep.read,fitness.activity.read,fitness.heart_rate.read"
+          },
+          "data": {
+            "activity": {
+              "type": "activity",
+              "metadata": {
+                "name": "Running",
+                "start_time": "2025-02-15T21:53:40.898544Z",
+                "end_time": "2025-02-15T21:54:10.898544Z",
+                "upload_type": 1,
+                "summary_id": "fake-08df4348-ee51-4f3f-880c-c3b3c0b20d23"
+              },
+              "data_points": [
+                {
+                  "timestamp": "2025-02-15T21:53:45.898544Z",
+                  "steps": 20
+                },
+                {
+                  "timestamp": "2025-02-15T21:53:55.898544Z",
+                  "steps": 25
+                }
+              ]
+            },
+            "sleep": {
+              "type": "sleep",
+              "metadata": {
+                "start_time": "2025-02-15T13:53:40.898544Z",
+                "end_time": "2025-02-15T21:53:40.898544Z",
+                "sleep_quality": "good",
+                "summary_id": "fake-6c2b0dac-1f2e-4fa0-b655-6561d640507b"
+              },
+              "data_points": [
+                {
+                  "timestamp": "2025-02-15T17:53:40.898544Z",
+                  "sleep_stage": "deep",
+                  "duration": 30
+                },
+                {
+                  "timestamp": "2025-02-15T18:53:40.898544Z",
+                  "sleep_stage": "light",
+                  "duration": 20
+                }
+              ]
+            },
+            "heart_rate": {
+              "type": "heart_rate",
+              "metadata": {
+                "start_time": "2025-02-15T21:53:40.898544Z",
+                "end_time": "2025-02-15T21:54:10.898544Z",
+                "summary_id": "fake-61810d6e-a9f5-4ef6-bb18-5cceece5b56e"
+              },
+              "data_points": [
+                {
+                  "timestamp": "2025-02-15T21:53:45.898544Z",
+                  "bpm": 80
+                },
+                {
+                  "timestamp": "2025-02-15T21:53:55.898544Z",
+                  "bpm": 82
+                },
+                {
+                  "timestamp": "2025-02-15T21:54:05.898544Z",
+                  "bpm": 81
+                }
+              ]
+            }
+          }
+        },
+        {
+          "user": {
+            "user_id": "c81a99a8-8e22-4377-be1a-3e19948062cc",
+            "reference_id": "captain_marvel",
+            "provider": "GARMIN",
+            "active": true,
+            "created_at": "2025-02-15T21:54:11.143989Z",
+            "last_webhook_update": "2025-02-15T21:54:11.143991Z",
+            "scopes": "fitness.sleep.read,fitness.activity.read,fitness.heart_rate.read"
+          },
+          "data": {
+            "activity": {
+              "type": "activity",
+              "metadata": {
+                "name": "Running",
+                "start_time": "2025-02-15T21:53:40.898544Z",
+                "end_time": "2025-02-15T21:54:10.898544Z",
+                "upload_type": 1,
+                "summary_id": "fake-08df4348-ee51-4f3f-880c-c3b3c0b20d23"
+              },
+              "data_points": [
+                {
+                  "timestamp": "2025-02-15T21:53:45.898544Z",
+                  "steps": 20
+                },
+                {
+                  "timestamp": "2025-02-15T21:53:55.898544Z",
+                  "steps": 25
+                }
+              ]
+            },
+            "sleep": {
+              "type": "sleep",
+              "metadata": {
+                "start_time": "2025-02-15T13:53:40.898544Z",
+                "end_time": "2025-02-15T21:53:40.898544Z",
+                "sleep_quality": "good",
+                "summary_id": "fake-6c2b0dac-1f2e-4fa0-b655-6561d640507b"
+              },
+              "data_points": [
+                {
+                  "timestamp": "2025-02-15T17:53:40.898544Z",
+                  "sleep_stage": "deep",
+                  "duration": 30
+                },
+                {
+                  "timestamp": "2025-02-15T18:53:40.898544Z",
+                  "sleep_stage": "light",
+                  "duration": 20
+                }
+              ]
+            },
+            "heart_rate": {
+              "type": "heart_rate",
+              "metadata": {
+                "start_time": "2025-02-15T21:53:40.898544Z",
+                "end_time": "2025-02-15T21:54:10.898544Z",
+                "summary_id": "fake-61810d6e-a9f5-4ef6-bb18-5cceece5b56e"
+              },
+              "data_points": [
+                {
+                  "timestamp": "2025-02-15T21:53:45.898544Z",
+                  "bpm": 80
+                },
+                {
+                  "timestamp": "2025-02-15T21:53:55.898544Z",
+                  "bpm": 82
+                },
+                {
+                  "timestamp": "2025-02-15T21:54:05.898544Z",
+                  "bpm": 81
+                }
+              ]
+            }
+          }
+        }
+      ]
+    }
+  }
