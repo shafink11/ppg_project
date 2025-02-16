@@ -7,7 +7,7 @@ import pinecone
 import numpy as np
 from sentence_transformers import SentenceTransformer
 
-API_KEY = '4actk-rayan-testing-1Zc12PJqrG'
+API_KEY = 'no no no...'
 BASE_URL = 'https://api.tryterra.co'
 DEV_ID = 'OwQmSDxQWwjinYp6GuxL8-bxiOuSZMDw'
 WIDGET_SESSION_URL = f"{BASE_URL}/v2/auth/generateWidgetSession"
