@@ -7,9 +7,6 @@ import pinecone
 import numpy as np
 from sentence_transformers import SentenceTransformer
 
-# -------------------------
-# Terra API Configuration
-# -------------------------
 API_KEY = '4actk-rayan-testing-1Zc12PJqrG'
 BASE_URL = 'https://api.tryterra.co'
 DEV_ID = 'OwQmSDxQWwjinYp6GuxL8-bxiOuSZMDw'
@@ -23,16 +20,11 @@ AUTH_FAILURE_REDIRECT_URL = "https://myapp.com/failure"
 # The real user we will base our data on.
 REAL_USER_ID = "f7461933-2ecf-45cf-bcd6-eeac0c2f0c53"
 
-# -------------------------
-# Pinecone Configuration
-# -------------------------
 PINECONE_API_KEY = "YOUR_PINECONE_API_KEY"
 PINECONE_ENVIRONMENT = "YOUR_PINECONE_ENVIRONMENT"
 INDEX_NAME = "terra-rt-index"
 
-# -------------------------
-# Functions for Terra API
-# -------------------------
+
 def generate_widget_session():
     headers = {
         "x-api-key": API_KEY,
@@ -82,7 +74,6 @@ def simulate_fake_member(base_data, user_name):
         },
         "data": {}
     }
-    # Clone each data type and update its summary_id.
     for key, value in base_data.get("data", {}).items():
         new_value = value.copy()
         if "metadata" in new_value and "summary_id" in new_value["metadata"]:
@@ -90,9 +81,7 @@ def simulate_fake_member(base_data, user_name):
         member["data"][key] = new_value
     return member
 
-# -------------------------
-# Utility: Convert a Member's Data to Text
-# -------------------------
+
 def member_to_text(member):
     user_info = member.get("user", {})
     data_info = member.get("data", {})
@@ -111,28 +100,19 @@ def member_to_text(member):
     )
     return text
 
-# -------------------------
-# Update Pinecone with TerraRT Data
-# -------------------------
 def update_pinecone(team):
-    # Initialize Pinecone.
     pinecone.init(api_key=PINECONE_API_KEY, environment=PINECONE_ENVIRONMENT)
-    
-    # Prepare text records for each team member.
     team_members = team["team"]["members"]
     texts = [member_to_text(member) for member in team_members]
     
-    # Load a small Sentence Transformer model for embeddings.
     embedding_model = SentenceTransformer("sentence-transformers/all-MiniLM-L6-v2")
     embeddings = embedding_model.encode(texts, convert_to_numpy=True)
     
-    # Create the index if it doesn't exist.
     if INDEX_NAME not in pinecone.list_indexes():
         dimension = embeddings.shape[1]
         pinecone.create_index(INDEX_NAME, dimension=dimension)
     index = pinecone.Index(INDEX_NAME)
     
-    # Upsert each member's embedding into Pinecone.
     vectors = []
     for i, text in enumerate(texts):
         vector = embeddings[i].tolist()
@@ -141,17 +121,12 @@ def update_pinecone(team):
     index.upsert(vectors=vectors)
     print("Pinecone vector database updated with terraRT data.")
 
-# -------------------------
-# Main Function
-# -------------------------
 def main():
-    # --- STEP 1: Generate Widget Session ---
     widget_session = generate_widget_session()
     if not widget_session:
         print("Cannot continue without a widget session.")
         return
 
-    # --- STEP 2: Get User Data for the Past 30 Seconds ---
     end_time = datetime.utcnow()
     start_time = end_time - timedelta(seconds=30)
     real_data = get_user_data(REAL_USER_ID, start_time, end_time)
@@ -160,7 +135,6 @@ def main():
         print("Real user data not available, aborting.")
         return
 
-    # --- STEP 3: Build Fake Team Data ---
     team = {
         "team": {
             "team_id": "team_fake_001",
@@ -169,7 +143,6 @@ def main():
         }
     }
     
-    # Add the real user as the first team member.
     team["team"]["members"].append(real_data)
     
     fake_names = [
@@ -181,11 +154,9 @@ def main():
         fake_member = simulate_fake_member(real_data, name)
         team["team"]["members"].append(fake_member)
     
-    # --- STEP 4: Output the Team JSON ---
     print("\nFake Team JSON:")
     print(json.dumps(team, indent=2))
     
-    # --- STEP 5: Update Pinecone Vector Database with terraRT Data ---
     update_pinecone(team)
 
 if __name__ == "__main__":
